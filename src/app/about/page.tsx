@@ -1,4 +1,6 @@
-import React from 'react'
+export const metadata  ={
+    title: 'Rightmo about'
+}
 
 const AboutPage = () => {
   return (

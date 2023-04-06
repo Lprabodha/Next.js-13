@@ -1,7 +1,10 @@
+import Repo from "@/app/components/Repo";
 
-const RepoPage = () => {
+const RepoPage = ({params : {name} }) => {
   return (
-    <div>RepoPage</div>
+    <div className="card">
+        <Repo name={name}/>
+    </div>
   )
 }
 

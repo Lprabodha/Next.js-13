@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import LoadingPage from './loading';
 import Courses from './components/Courses';
+import CourseSearch from './components/CourseSearch';
 
 const HomePage = () => {
   const [courses, setCourses] = useState([]);
@@ -26,7 +27,7 @@ const HomePage = () => {
   return (
     <>
       <h1>Welcome To Rightmo web</h1>
-      {/* <CourseSearch getSearchResults={(results) => setCourses(results)} /> */}
+      <CourseSearch getSearchResults={(results) => setCourses(results)} />
       <Courses courses={courses} />
     </>
   );
